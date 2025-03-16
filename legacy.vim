@@ -31,7 +31,7 @@ set ttimeoutlen=50
 
 " FIXME(@were): This highlight is not working.
 " Highlight trailing whitespace and lines longer than 80 columns.
-highlight LongLine ctermbg=DarkYellow guibg=DarkYellow
+" highlight LongLine ctermbg=DarkYellow guibg=DarkYellow
 highlight WhitespaceEOL ctermbg=DarkYellow guibg=DarkYellow
 
 let g:airline_powerline_fonts = 1

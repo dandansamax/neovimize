@@ -1,7 +1,20 @@
-vim.cmd('source ~/.config/nvim/legacy.vim')
-vim.opt.signcolumn = 'yes'
+vim.cmd("source ~/.config/nvim/legacy.vim")
+vim.opt.signcolumn = "yes"
 
-require('config.lazy')
+require("config.lazy")
+require("conform").setup({
+	formatters_by_ft = {
+		lua = { "stylua" },
+		python = { "ruff" },
+	},
+})
+require("conform").setup({
+	format_on_save = {
+		timeout_ms = 500,
+		lsp_format = "fallback",
+	},
+})
+vim.opt.colorcolumn = ""
 
 -- require('img-clip').setup ({
 --   default = {
